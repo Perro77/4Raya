@@ -1,4 +1,4 @@
-public class CrearTablero {
+public class imprimirTablero {
     private Tablero t = Tablero.getTablero(6,7);
     public static final String ANSI_BLUE = "\u001B[34m";
 
