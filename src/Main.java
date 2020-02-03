@@ -1,7 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        CrearTablero t1 = new CrearTablero();
-        t1.imprimirTablero();
+        Tablero t1 = Tablero.getTablero(6,7);
+        CrearTablero t2 = new CrearTablero();
+        t2.imprimirTablero();
+
     }
 
 

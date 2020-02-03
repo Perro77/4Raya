@@ -4,16 +4,29 @@ public class Tablero{
     private int columnas;
     private static Tablero tablero;
 
+
     public static Tablero getTablero(int filas, int columnas){
         if(tablero == null){
             tablero = new Tablero(filas, columnas);
         }
         return tablero;
+
     }
 
     private Tablero(int filas, int columnas){
         this.filas = filas;
         this.columnas = columnas;
+        crearTablero();
+    }
+
+    private Casilla[][] crearTablero(){
+        Casilla[][] casillas = new Casilla[filas][columnas];
+        for(int i=0; i<filas; i++){
+            for(int k=0; k<columnas; k++){
+                casillas[i][k] = new Casilla();
+            }
+        }
+        return casillas;
     }
 
 
