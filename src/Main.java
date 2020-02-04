@@ -6,9 +6,9 @@ public class Main {
 
         Jugadores j = Jugadores.getJugadores();
 
-        Jugador j1 = new Jugador();
 
-        j1.setPesa(j1.demanarPesa());
+
+        System.out.println();
     }
 
 

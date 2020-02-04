@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Jugador {
     Scanner sc = new Scanner(System.in);
     private Character pesa;
-    Jugadores jug = Jugadores.getJugadores();
 
     public char demanarPesa(){
         System.out.println("Quina es sa teva pesa? ");
