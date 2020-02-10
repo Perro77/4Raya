@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Jugador {
     private char pesa;
     Jugadores j1 = Jugadores.getJugadores();
-    public static final String ANSI_RED = "\u001B[31m";
+
 
 
     public Jugador(){
