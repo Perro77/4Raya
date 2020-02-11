@@ -3,6 +3,8 @@ public class Tablero{
     private int filas;
     private int columnas;
     private static Tablero tablero;
+    private Casilla[][] casillas;
+
 
 
     public static Tablero getTablero(int filas, int columnas){
@@ -20,7 +22,7 @@ public class Tablero{
     }
 
     private Casilla[][] crearTablero(){
-        Casilla[][] casillas = new Casilla[filas][columnas];
+        casillas = new Casilla[filas][columnas];
         for(int i=0; i<filas; i++){
             for(int k=0; k<columnas; k++){
                 casillas[i][k] = new Casilla();
@@ -46,5 +48,8 @@ public class Tablero{
         this.columnas = columnas;
     }
 
+    public Casilla[][] getCasillas(){
+        return casillas;
+    }
 
 }

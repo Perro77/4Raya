@@ -8,7 +8,10 @@ public class Demanar {
     public void demanarColumnes(){
         System.out.println();
         System.out.println();
-        System.out.println(ANSI_RED +"A quina columna vols colocar la fitxa??");
+        System.out.println(ANSI_RED + "A quina columna vols colocar la fitxa??");
         colocar = sc.nextInt();
+        if(colocar < 1 || colocar > 7) {
+            System.out.println("Posa un nombre valid bobo");
+        }
     }
 }
