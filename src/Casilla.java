@@ -1,5 +1,5 @@
 public class Casilla {
-    boolean ocupada;
+    boolean ocupada = false;
 
 
     public Casilla (){
